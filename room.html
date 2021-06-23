@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/room.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
     <!-- Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -56,7 +57,7 @@
                     <div class="question-wrapper">
                         <div class="question-content">
                             <div class="user">
-                                <img src="./assets/avatar.svg" alt="avatar">
+                                <img src="./assets/user.svg" alt="avatar">
                             </div>
                             <div class="question">
                                 <p>Qual é a diferença entre a tag Div e a tag Span?</p>
@@ -73,9 +74,91 @@
                             </a>
                         </div>
                     </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>O que é Javascript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" href="#">
+                                <img src="./assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a class="delete" href="#">
+                                <img src="./assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit  sit amet consectetur adipisicing elit  sit amet consectetur adipisicing elit. Excepturi hic, officiis, ullam vitae numquam doloribus voluptatum corporis magnam sapiente suscipit et deserunt autem? Est necessitatibus vel, dolores repellendus magnam totam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a class="check" href="#">
+                                <img src="./assets/check.svg" alt="Marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a class="delete" href="#">
+                                <img src="./assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="question-wrapper read">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="./assets/user.svg" alt="avatar">
+                            </div>
+                            <div class="question">
+                                <p>O que é Typescript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            
+                            <a class="delete" href="#">
+                                <img src="./assets/trash.svg" alt="Excluir">
+                                Excluir
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <h2>Excluir Pergunta</h2>
+            <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+            <form action="">
+                <label for-id="password" class="sr-only">Digite sua senha</label>
+                <input type="password" id="password" name="password" placeholder="digite sua senha">
+
+                <div class="buttons">
+                    <div class="button gray">Cancelar</div>
+                    <button class="red">Sim, excluir</button>
+                </div>
+
+            </form>
+        </div>
     </div>
 </body>
 </html>

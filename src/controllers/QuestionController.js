@@ -1,6 +1,10 @@
 
 
 module.exports = {
+    home(req, res) {
+        return res.render("index", { page: "enter-room"});
+    },
+
     index(req, res) {
         const roomId = req.params.room;
         const questionId = req.params.question;

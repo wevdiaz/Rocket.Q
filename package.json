@@ -2,9 +2,9 @@
   "name": "Rocket.Q",
   "version": "1.0.0",
   "description": "Projeto sendo desenvolvido na NLW#06 da rocketseat. A trilha Discover com fundamentos básicos para o Front-end e Bach-end.",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",

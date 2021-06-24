@@ -1,6 +1,8 @@
 const express = require("express");
 const route = express.Router();
 
+const QuestionController = require("../controllers/QuestionController");
+
 route.get("/", (req, res) => {
     return res.render("home");
 });
@@ -13,6 +15,6 @@ route.get("/room", (req, res) => {
     return res.render("room");
 });
 
-// route.get("/room/:room/:question/:action");
+route.post("/room/:room/:question/:action", QuestionController.index );
 
 module.exports = route;

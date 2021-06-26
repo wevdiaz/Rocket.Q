@@ -15,5 +15,7 @@ module.exports = {
         console.log(`${questionId},`)
         console.log(`${action},`)
         console.log(`${password},`)
-    }
+    },
+
+    create(req, res) {}
 }

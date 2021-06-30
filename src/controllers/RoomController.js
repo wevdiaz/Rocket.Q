@@ -6,6 +6,8 @@ module.exports = {
         const password = req.body.password;
         let roomId = "";
         let isRoom = true;
+        
+        if (password == "") return res.send("Informe uma senha para a sala");
 
         while (isRoom) {
             // create ID
@@ -51,8 +53,10 @@ module.exports = {
     },
 
     async enterRoom(req, res) {
-        const roomId = req.body.roomId;       
-
+        const roomId = req.body.roomId;
+        
+        if (!roomId) return res.send("Informe o código da sala");
+        
         return res.redirect(`/room/${roomId}`);
     }
 }

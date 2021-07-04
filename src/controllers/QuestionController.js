@@ -2,7 +2,7 @@ const Database = require("../db/config");
 
 module.exports = {
     home(req, res) {
-        return res.render("index", { page: "enter-room"});
+        return res.render("index", { page: "enter-room", message: "message", error: { status: false } });
     },
 
     async index(req, res) {

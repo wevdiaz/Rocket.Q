@@ -1,13 +1,24 @@
 const Database = require("../db/config");
 
 module.exports = {
+    createRoom(req, res) {
+        return res.render("index", { page: "create_pass", message: "message", error: { status: false }});
+    },
+
     async create(req, res) {
         const db = await Database();
         const password = req.body.password;
         let roomId = "";
         let isRoom = true;
         
-        if (password == "") return res.send("Informe uma senha para a sala");
+        if (password == "") return res.render("index", {
+            page: "create_pass",
+            message: "message",
+            error: {
+                status: true,
+                title: "Informe uma senha para prosseguir"
+            }
+        });
 
         while (isRoom) {
             // create ID
@@ -55,7 +66,14 @@ module.exports = {
     async enterRoom(req, res) {
         const roomId = req.body.roomId;
         
-        if (!roomId) return res.send("Informe o código da sala");
+        if (!roomId) return res.render("index", { 
+            page: "enter-room",
+            message: "message",
+            error: {
+                status: true,
+                title: "informe o número da sala"
+            }
+         });
         
         return res.redirect(`/room/${roomId}`);
     }

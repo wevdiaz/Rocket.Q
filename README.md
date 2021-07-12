@@ -1,6 +1,8 @@
 ![logo do projeto Rocket.Q](https://raw.githubusercontent.com/wevdiaz/Rocket.Q/1b284e3e86cc8ee8b3d9c92d5cb87073b170d309/public/images/logo.svg)
 
-![tela principal](https://raw.githubusercontent.com/wevdiaz/Rocket.Q/main/images/home_page.png)
+<p align="center">
+   <img alt="Imagem animada da aplicação Rocket.Q" src="https://github.com/wevdiaz/Rocket.Q/blob/main/images/nlw_discover.gif" >
+</p>
 
 ***
 
